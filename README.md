@@ -65,7 +65,7 @@ The window shows the route (cyan = between the trees, orange = over the treetops
 Training ran to 608 M steps; the pilot in `pilot.npz` is the 377 M-step checkpoint, the one with the highest success rate (94.9 %). Later checkpoints did not improve.
 
 ```bash
-python train_drone.py --name pilot2                                  # needs JAX with CUDA
+python train_drone.py --name pilot2 --steps 600e6 --evals 30        # needs JAX with CUDA
 JAX_PLATFORMS=cpu python export_policy.py runs/pilot2/ckpt/step_000377487360.pkl pilot.npz
 ```
 
