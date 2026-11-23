@@ -54,8 +54,20 @@ The window shows the route (cyan = between the trees, orange = over the treetops
 | `pilot.npz` | the trained pilot network |
 | `saved_map.npz` | a finished lidar map, to skip the mapping flight |
 | `scene/` | the generated world: terrain, trees, rocks and pads |
+| `drone_env.py` | the training environment (JAX/MJX): random forests on hilly ground, lidar, routes, landing |
+| `train_drone.py` | PPO training (Brax) on all visible GPUs, 8,192 parallel worlds |
+| `export_policy.py` | checkpoint → `pilot.npz` for the live app |
+| `test_env.py`, `rollout_train.py`, `crash_causes.py` | checks, rollouts in training worlds, failure analysis |
+| `world_demo.py` | builds the fixed demo world in `scene/` |
+| `record_demo.py`, `video_drone.py`, `train_worlds.py`, `render_drone.sh` | the video |
+| `runs/pilot2/` | training settings, curve and log |
 
-The GPU training script (JAX, run on a lab server) is not included yet.
+Training ran to 608 M steps; the pilot in `pilot.npz` is the 377 M-step checkpoint, the one with the highest success rate (94.9 %). Later checkpoints did not improve.
+
+```bash
+python train_drone.py --name pilot2                                  # needs JAX with CUDA
+JAX_PLATFORMS=cpu python export_policy.py runs/pilot2/ckpt/step_000377487360.pkl pilot.npz
+```
 
 ## Credits
 

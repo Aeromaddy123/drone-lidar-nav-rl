@@ -1,0 +1,40 @@
+E1123 10:33:28.356329 3584280 slow_operation_alarm.cc:73] 
+********************************
+[Compiling module input_reduce_fusion.2 for GPU] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+E1123 10:35:20.903021 3584255 slow_operation_alarm.cc:140] The operation took 3m52.546830707s
+
+********************************
+[Compiling module input_reduce_fusion.2 for GPU] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+[   5.0 min] step            0  reward  -47.08  success 0.000  crash 0.959  route 0.098  len    455  sps    11465
+[   7.6 min] step   20,971,520  reward  -19.84  success 0.031  crash 0.514  route 0.728  len   1142  sps    85001
+[   8.7 min] step   41,943,040  reward   32.21  success 0.487  crash 0.302  route 0.945  len    848  sps   552108
+[   9.2 min] step   62,914,560  reward   41.38  success 0.618  crash 0.257  route 0.963  len    750  sps   544707
+[   9.8 min] step   83,886,080  reward   55.40  success 0.864  crash 0.101  route 0.974  len    611  sps   543023
+[  10.4 min] step  104,857,600  reward   54.71  success 0.839  crash 0.137  route 0.966  len    579  sps   541017
+[  11.1 min] step  125,829,120  reward   58.29  success 0.872  crash 0.058  route 0.976  len    619  sps   507987
+[  11.7 min] step  146,800,640  reward   60.87  success 0.921  crash 0.075  route 0.967  len    516  sps   500068
+[  12.3 min] step  167,772,160  reward   60.50  success 0.933  crash 0.058  route 0.975  len    526  sps   526470
+[  12.9 min] step  188,743,680  reward   60.38  success 0.926  crash 0.062  route 0.971  len    535  sps   522231
+[  13.6 min] step  209,715,200  reward   60.40  success 0.920  crash 0.063  route 0.974  len    543  sps   527450
+[  14.2 min] step  230,686,720  reward   59.85  success 0.920  crash 0.076  route 0.971  len    527  sps   526155
+[  14.8 min] step  251,658,240  reward   61.29  success 0.925  crash 0.073  route 0.968  len    515  sps   525474
+[  15.4 min] step  272,629,760  reward   61.19  success 0.934  crash 0.063  route 0.966  len    514  sps   525456
+[  16.0 min] step  293,601,280  reward   62.22  success 0.941  crash 0.053  route 0.970  len    522  sps   526958
+[  16.6 min] step  314,572,800  reward   60.74  success 0.933  crash 0.067  route 0.965  len    499  sps   525549
+[  17.2 min] step  335,544,320  reward   60.97  success 0.933  crash 0.066  route 0.963  len    499  sps   516632
+[  17.9 min] step  356,515,840  reward   62.09  success 0.942  crash 0.058  route 0.967  len    503  sps   507027
+[  18.5 min] step  377,487,360  reward   62.03  success 0.949  crash 0.049  route 0.970  len    498  sps   525347
+[  19.1 min] step  398,458,880  reward   60.60  success 0.931  crash 0.065  route 0.962  len    502  sps   534548
+[  19.8 min] step  419,430,400  reward   60.78  success 0.927  crash 0.072  route 0.961  len    491  sps   534495
+[  20.4 min] step  440,401,920  reward   61.44  success 0.935  crash 0.065  route 0.964  len    495  sps   534387
+[  21.0 min] step  461,373,440  reward   61.04  success 0.936  crash 0.063  route 0.967  len    486  sps   535057
+[  21.6 min] step  482,344,960  reward   61.65  success 0.941  crash 0.058  route 0.968  len    487  sps   534105
+[  22.2 min] step  503,316,480  reward   61.77  success 0.942  crash 0.057  route 0.969  len    484  sps   534489
+[  22.8 min] step  524,288,000  reward   60.28  success 0.930  crash 0.068  route 0.963  len    487  sps   534606
+[  23.4 min] step  545,259,520  reward   59.91  success 0.932  crash 0.067  route 0.964  len    481  sps   534521
+[  24.0 min] step  566,231,040  reward   59.35  success 0.932  crash 0.068  route 0.961  len    471  sps   534225
+[  24.6 min] step  587,202,560  reward   59.17  success 0.927  crash 0.072  route 0.960  len    475  sps   535211
+[  25.2 min] step  608,174,080  reward   58.90  success 0.924  crash 0.075  route 0.962  len    483  sps   534260
+TRAINING_DONE

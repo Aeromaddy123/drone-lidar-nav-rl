@@ -1,0 +1,53 @@
+{
+  "name": "pilot2",
+  "steps": 600000000.0,
+  "evals": 30,
+  "envs": 8192,
+  "seed": 0,
+  "restore": null,
+  "lr": 0.0003,
+  "entropy": 0.005,
+  "lr_schedule": "ADAPTIVE_KL",
+  "ppo": {
+    "num_timesteps": 600000000,
+    "num_evals": 30,
+    "num_envs": 8192,
+    "episode_length": 1500,
+    "action_repeat": 1,
+    "learning_rate": 0.0003,
+    "entropy_cost": 0.005,
+    "discounting": 0.99,
+    "unroll_length": 20,
+    "batch_size": 512,
+    "num_minibatches": 32,
+    "num_updates_per_batch": 4,
+    "normalize_observations": true,
+    "reward_scaling": 1.0,
+    "clipping_epsilon": 0.2,
+    "max_grad_norm": 1.0,
+    "gae_lambda": 0.95,
+    "num_eval_envs": 2048,
+    "deterministic_eval": true,
+    "learning_rate_schedule": "ADAPTIVE_KL",
+    "desired_kl": 0.01,
+    "learning_rate_schedule_min_lr": 1e-05,
+    "learning_rate_schedule_max_lr": 0.001,
+    "seed": 0
+  },
+  "network": {
+    "policy_hidden_layer_sizes": [
+      256,
+      256,
+      128
+    ],
+    "value_hidden_layer_sizes": [
+      512,
+      256,
+      128
+    ]
+  },
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ]
+}
